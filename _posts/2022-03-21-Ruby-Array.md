@@ -10,19 +10,18 @@ tags: Blog
 
 最容易理解的方法，透過迭代的方式，將 array 內的元素逐一取出來後，將取出來的字串使用`+`方法串接起來
 
-```ruby=
+{% highlight ruby linenos %}
 greeting_arr = ["This", "is", "note", "about", "how", "to", "manipulate", "string", "on", "Ruby"]
 
 result_str = ""
 
-
 greeting_arr.each.with_index do |str, idx|
-  str += " "
-  result_str += str
+str += " "
+result_str += str
 end
 
 puts result_str
-```
+{% endhighlight%}
 
 最後一行程式碼中得到的輸出結果為
 

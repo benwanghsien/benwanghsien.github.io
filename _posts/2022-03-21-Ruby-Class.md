@@ -28,3 +28,6 @@ tags:
 # Class v.s Instance
 
 說了這麼多物件、物件導向、類別、屬性、方法等等名詞，接下來談談類別 Class 與實體 Instance 的關係，前面提到，類別就像是藍圖/模型一樣，而實體 Instance 就是我們利用我們利用 Class 建立出來的物件，具體一點就是當我們利用汽車藍圖產生一台車，那台車就是 Instance，可以將製作出來的車子依照藍圖加上品牌(例如：BMW)、引擎(例如：V8 引擎)、輪子(例如：4 顆)等等屬性，我們可以將產生出來的 Instance 裝入變數內並且命名，能夠讓我們方便記得產生出來的 Instance 是什麼東西
+
+Right aligned text.
+{: .notice--info}
