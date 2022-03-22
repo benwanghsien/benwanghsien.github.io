@@ -102,7 +102,7 @@ analytics:
 # Site Author
 author:
   name: "王孝先(Tgo Wang)"
-  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar: "/assets/images/avatar.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio: "曾經是職能治療師、西餐廚師，目前正在轉職軟體工程師的路上。"
   location: "Taichung, Taiwan🇹🇼"
   email: "ben2021345@hotmail.com"
