@@ -10,7 +10,7 @@ tags:
 
 <p style="text-align: center; color: #777">Photo by Laurynas Mereckas on Unsplash</p>
 
-清明四天的連假不知不覺又要最後一天了！趁著連假的最後一天趕快把這週應該要完成的文章寫完，預計從這週開始在課堂上教學 Ruby 後要花許多時間在 Ruby 以及 Rails 上！儘管如此還是要不斷的提醒自己要努力完成每週至少一篇文章的目標。這次決定來講一下在 JavaScript 中常常用來操作 array 的三個方法－`map`、`filter`、`reduce`，並且額外記錄一下在剛接觸時常常會用錯的`forEach`。
+清明四天的連假不知不覺到最後一天了！趁著連假的最後一天趕快把這週應該要完成的文章寫完，預計從這週開始在課堂上教學 Ruby 後要花許多時間在 Ruby 以及 Rails 上！儘管如此還是要不斷的提醒自己要努力完成每週至少一篇文章的目標。這次決定來講一下在 JavaScript 中常常用來操作 array 的三個方法－`map`、`filter`、`reduce`，並且額外記錄一下在剛接觸時常常會用錯的`forEach`。
 
 ## forEach：一個一個看過 array 內的每個元素
 
@@ -202,5 +202,5 @@ console.log(newArr); // [ 1, 2, 3, 4, 5, 6 ]
 此篇文主要目的在記錄學習程式語言時的筆記，如果有錯誤之處請不吝於私訊或來信指教，我會很感謝您給的回饋！
 以上內容參考自下列網站/文章：
 1. [Array - JavaScript - MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
-2. [卡斯伯的 Blog \| JavaScript 陣列處理方法](https://www.casper.tw/javascript/2017/06/29/es6-native-array/#Array-prototype-reduce)
+2. [卡斯伯的 Blog \| JavaScript 陣列處理方法](https://www.casper.tw/javascript/2017/06/29/es6-native-array)
 3. [Medium 學習Blog \| 【JavaScript】Array Reduce的用法](https://tzulinchang.medium.com/javascript-array-reduce%E7%9A%84%E7%94%A8%E6%B3%95-c435611a2935)
