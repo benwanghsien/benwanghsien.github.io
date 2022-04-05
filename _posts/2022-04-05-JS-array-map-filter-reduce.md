@@ -195,7 +195,9 @@ console.log(newArr); // [ 1, 2, 3, 4, 5, 6 ]
 
 ## 總結
 
-這次介紹的`map`、`filter`、`reduce`算是常常會用到的方法，使用時都要特別注意在 callback function 內的`return`值是什麼，不然容易產生預期以外的結果。此外這三種方法在介紹 Higher Order Function 時常被拿來當作範例，至於 Higher Order Function 是什麼就在挖個坑給之後的自己去填起來吧！文章寫到這也實在是夠長的了...
+這次介紹的`map`、`filter`、`reduce`算是常常會用到的方法，使用時都要特別注意在 callback function 內的`return`值是什麼，不然容易產生預期以外的結果。此外這三種方法在介紹 Higher Order Function 時常被拿來當作範例，至於 Higher Order Function 是什麼就再挖個坑給之後的自己去填起來吧！文章寫到這也實在是夠長的了...
+
+<br>
 
 此篇文主要目的在記錄學習程式語言時的筆記，如果有錯誤之處請不吝於私訊或來信指教，我會很感謝您給的回饋！
 以上內容參考自下列網站/文章：
