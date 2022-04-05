@@ -7,7 +7,7 @@ tags:
 
 ![writing_pic](/assets/images/article_about/writing.jpg){: .width-three .align-center}
 
-<p style="text-align: center">Photo by Mike Tinnion on Unsplash</p>
+<p style="text-align: center; color: #777">Photo by Mike Tinnion on Unsplash</p>
 
 **終於開站啦！！！！！**
 
