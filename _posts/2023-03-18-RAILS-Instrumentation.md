@@ -16,19 +16,38 @@ Instrumentation API使用的方法：
 
 {% highlight ruby linenos %}
 ActiveSupport.Notification.instrument("event.library", {custom_data: "this is a custom event."}) do
-  # The action
+  # Actions
 end
 {% endhighlight %}
 
-- 建立Subscriber：有了事件的來源後，其他物件則訂閱該事件去取得發布事件的物件要取得的訊息，透過`ActiveSupport::Notification`的`subscribe`方法去註冊某個事件，第一個參數的type可以是string或是regexp，如果是string是指的是特定的事件名稱，如果是regexp則指的是符合該表達式的所有事件。第二個參數為optonal, 放入一個可以回應`call`方法的callback物件，這個`call`方法可以取得五個參數，分別是：
+- 建立Subscriber：有了事件的來源後，其他物件則訂閱該事件去取得發布事件的物件要取得的訊息，透過`ActiveSupport::Notification`的`subscribe`方法去註冊某個事件，第一個參數的type可以是string或是regexp，如果是string是指的是特定的事件名稱，如果是regexp則指的是符合該表達式的所有事件。第二個參數為optional, 放入一個可以回應`call`方法的callback物件，這個`call`方法用來執行收到事件後要做的行為，可以取得五個參數，分別是：
 
     | parameter | description |
     | :-------: | ----------- |
     | `name` | 接收到事件的事件名稱 |
-    | `start` | 事件的開始時間，從Instrumenter執行block時開始計時 |
-    | `end` | 事件的結束時間，當Instrumenter執行完block時結束計時 |
+    | `started` | 事件的開始時間，從Instrumenter執行block時開始計時 |
+    | `finished` | 事件的結束時間，當Instrumenter執行完block時結束計時 |
     | `id` | 事件的ID |
     | `payload` | 事件的payload |
 
+    <br>
+  `subscribe`也可以放入block來執行收到事件後要做的行為，使用方式與放入第二個參數很像，兩者擇一使用就可以。
+
+{% highlight ruby linenos %}
+# 加上第二個參數
+class MyObject
+  def call(name, started, finished, id, payload)
+    # Actions
+  end
+end
+
+ActiveSupport.Notification.subscribe("event.library", MyObject.new)
+
+# 加上block
+ActiveSupport.Notification.subscribe("event.library") do |name, started, finished, id, payload|
+  # The action
+end
+{% endhighlight %}
+  
 
 在公司的專案中使用Lograge來代替原本ActionController產生的log，這個Gem可以將原本Rails的log有些多餘的資訊刪掉，讓我們利用log來debug時，更容易搜索或閱讀log。而這次的需求是需要取得Elasticsearch的執行時間，在專案中用了Searchkick這個Gem去向Elasticsearch送出request，
