@@ -21,9 +21,9 @@ title_separator: "|"
 subtitle: # site tagline that appears below site title in masthead
 name: "Tgo Wang"
 description: "學習程式語言的筆記與心得，偶爾放放生活中的小樂趣"
-url: "https://s8854198.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url: "https://benwanghsien.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl: # the subpath of your site, e.g. "/blog"
-repository: "s8854198/s8854198.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository: "benwanghsien/benwanghsien.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo: # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title: # overrides the website title displayed in the masthead, use " " for no title
@@ -103,7 +103,7 @@ analytics:
 author:
   name: "王孝先(Tgo Wang)"
   avatar: "/assets/images/avatar.JPG" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio: "曾經是職能治療師、西餐廚師，目前正在轉職軟體工程師的路上。"
+  bio: "曾經是職能治療師、西餐廚師，目前是位軟體工程師(Web Developer)。"
   location: "Taichung, Taiwan🇹🇼"
   email: "ben2021345@hotmail.com"
   links:
@@ -121,7 +121,7 @@ author:
       url: "https://www.facebook.com/tgo.wang/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/s8854198"
+      url: "https://github.com/benwanghsien"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       # url: "https://instagram.com/"
@@ -137,7 +137,7 @@ footer:
       url: "https://www.facebook.com/tgo.wang/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/s8854198"
+      url: "https://github.com/benwanghsien"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
